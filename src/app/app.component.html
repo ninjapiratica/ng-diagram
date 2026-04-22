@@ -1,0 +1,23 @@
+<section class="shell">
+  <header class="controls">
+    <div>
+      <p class="eyebrow">ng-diagram + ELK</p>
+      <h1>Three-node flow</h1>
+    </div>
+
+    <button type="button" class="direction-toggle" (click)="toggleLayoutDirection()">
+      {{ buttonLabel() }}
+    </button>
+  </header>
+
+  <div class="diagram-frame">
+    <ng-diagram
+      [model]="diagram"
+      [nodeTemplateMap]="nodeTemplateMap"
+      [config]="config"
+      (diagramInit)="onDiagramInit($event)"
+      (selectionMoved)="onSelectionMoved($event)"
+      >
+    </ng-diagram>
+  </div>
+</section>

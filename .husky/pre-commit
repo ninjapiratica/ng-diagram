@@ -1,3 +1,0 @@
-pnpm lint:check
-pnpm check-types
-pnpm format:fix

@@ -1,0 +1,8 @@
+<div class="wrapper">
+    <ng-diagram-port id="port-in" type="target" [side]="node().data.layoutDirection === 'RIGHT' ? 'left' : 'top'" />
+
+    {{ node().data.label }}
+
+    <ng-diagram-port id="port-out" type="source"
+        [side]="node().data.layoutDirection === 'RIGHT' ? 'right' : 'bottom'" />
+</div>
